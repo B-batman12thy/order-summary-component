@@ -8,9 +8,9 @@
   /*
     2. Remove default margin
   */
-  * {
+ /*  * {
     margin: 0;
-  }
+  } */
   /*
     3. Allow percentage-based heights in the application
   */
@@ -63,7 +63,8 @@
 }
 body{
     background-color: var(--pale-blue);
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
     display: grid;
     place-content: center;
     min-height: 100vh;
@@ -71,13 +72,24 @@ body{
 .order{
     text-align: center;
     width: 375px;
-    height: auto;
+    height: 660px;
     background-color: white;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.order-image{
+    background-color: var(--pale-blue);
+}
+.order-image img{
+   
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
 }
 .order-content{
     display: grid;
-    gap: 30px;
     place-content: center;
+    margin: 30px;
+    
 }
 .order-title{
     font-weight: 700;
@@ -88,5 +100,28 @@ p{
 }
 
 .formule{
-    display: flex;margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin: 10px;
+    padding: 20px;
+   /*  border: solid; */
+    height:80px;
+    width: 310px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var( --neu-plae-blue);
+    
+}
+button{
+    color: white;
+    height: 65px;
+    margin: 10px;
+    background-color:var(--bright-blue);
+    border-radius: 20px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+svg{
+    width: auto;
 }
