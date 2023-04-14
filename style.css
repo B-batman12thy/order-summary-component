@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;1,300&display=swap');
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -50,7 +51,42 @@
   #root, #__next {
     isolation: isolate;
   }
-root{
+:root{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --neu-plae-blue:hsl(225, 100%, 98%);
+    --neu-dest-blue:hsl(224, 23%, 55%);
+    --neu-dark-blue: hsl(223, 47%, 23%);
+
     
+}
+body{
+    background-color: var(--pale-blue);
+    font-size: 16px;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+.order{
+    text-align: center;
+    width: 375px;
+    height: auto;
+    background-color: white;
+}
+.order-content{
+    display: grid;
+    gap: 30px;
+    place-content: center;
+}
+.order-title{
+    font-weight: 700;
+}
+p{
+    font-weight: 500;
+    color:var(--neu-dest-blue)
+}
+
+.formule{
+    display: flex;margin-bottom: 20px;
 }
