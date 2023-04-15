@@ -51,7 +51,6 @@
     isolation: isolate;
   }
 :root{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --pale-blue:hsl(225, 100%, 94%);
     --bright-blue:hsl(245, 75%, 52%);
     --neu-plae-blue:hsl(225, 100%, 98%);
