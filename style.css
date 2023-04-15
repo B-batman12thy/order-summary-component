@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;1,300&display=swap');
-/*
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');/*
   1. Use a more-intuitive box-sizing model.
 */
 *, *::before, *::after {
@@ -58,24 +57,34 @@
     --neu-plae-blue:hsl(225, 100%, 98%);
     --neu-dest-blue:hsl(224, 23%, 55%);
     --neu-dark-blue: hsl(223, 47%, 23%);
+    --bright-blue-shadow:rgba(56, 41, 224, 35%);
 
     
 }
 body{
+  font-family: 'Red Hat Display', sans-serif;
     background-color: var(--pale-blue);
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 900;
     display: grid;
     place-content: center;
+    width: 100%;
     min-height: 100vh;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 }
 .order{
     text-align: center;
-    width: 375px;
-    height: 660px;
+    width: 350px;
+    height: 600px;
     background-color: white;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
+}
+.order-title{
+    color: black;
 }
 .order-image{
     background-color: var(--pale-blue);
@@ -88,14 +97,17 @@ body{
 .order-content{
     display: grid;
     place-content: center;
-    margin: 30px;
+    margin: 25px;
+    color:var(--neu-dest-blue)
     
+}
+.paragraph{
+  line-height: 1.4rem;
 }
 .order-title{
     font-weight: 700;
 }
 p{
-    font-weight: 500;
     color:var(--neu-dest-blue)
 }
 
@@ -115,13 +127,18 @@ p{
 }
 button{
     color: white;
-    height: 65px;
+    height: 60px;
     margin: 10px;
+    border: none;
     background-color:var(--bright-blue);
-    border-radius: 20px;
+    border-radius: 15px;
     margin-bottom: 35px;
     cursor: pointer;
+    box-shadow: 0 .3rem .4rem .08rem var(--bright-blue-shadow) ;
 }
 svg{
     width: auto;
+}
+.price{
+  line-height: 0.5rem;
 }
